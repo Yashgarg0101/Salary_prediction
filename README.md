@@ -2,7 +2,7 @@
 
 This repository hosts a machine learning-powered Streamlit web application that predicts salaries (in USD) based on job-related features.
 
-Project URL: https://salaryprediction-c2qcd4cwfnftblm7jthb79.streamlit.app/
+Project URL : https://salaryprediction-c2qcd4cwfnftblm7jthb79.streamlit.app/
 ---
 
 ## 🔍 Overview
@@ -11,12 +11,20 @@ This app allows users to input various job attributes and returns a predicted sa
 
 ---
 
-## 🧠 Features
+## 🧠 Machine Learning Techniques Used
 
-- 📊 Predicts salary using multiple input parameters
-- 🧠 Uses an ensemble of **Linear Regression**, **Random Forest**, and **Gradient Boosting**
-- 🎯 High Accuracy: **R² Score: 0.9169**
-- 🌐 Built with Python, Streamlit, and Scikit-learn
+The application uses an **ensemble learning approach** called a **Voting Regressor**, which combines predictions from the following models:
+
+1. **Linear Regression**  
+   A baseline model that assumes a linear relationship between features and salary.
+
+2. **Random Forest Regressor**  
+   A powerful ensemble of decision trees that improves accuracy by averaging many models trained on random data samples.
+
+3. **Gradient Boosting Regressor**  
+   An advanced boosting technique that builds models sequentially to reduce prediction error.
+
+These models are combined to improve generalization and prediction performance.
 
 ---
 
